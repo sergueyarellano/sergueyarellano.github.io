@@ -1,3 +1,25 @@
+@font-face {
+  font-family: 'vaweb-light';
+  src: url('./fonts/vaweb-light.eot');
+  src: url('./fonts/vaweb-light.eot') format('embedded-opentype'),
+      url('./fonts/vaweb-light.ttf') format('truetype'),
+      url('./fonts/vaweb-light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'vaweb-light';
+  font-weight:normal;
+  font-style:normal;
+}
+
+:root {
+  --black: #222831;
+  --grey: #30475e;
+  --orange: #f2a365;
+  --white: #ececec;
+}
 *{
   box-sizing: border-box;
   padding: 0;
@@ -17,6 +39,9 @@ header {
   grid-template-areas: 'logo title nav';
   grid-template-columns: 1fr 4fr 3fr;
   align-content: center;
+  background-color: var(--grey);
+  align-items: center;
+  color: var(--white);
   padding: 20px 20px 0;
 }
 

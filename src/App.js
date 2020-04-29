@@ -1,10 +1,11 @@
 import React from 'react'
 import './style.css'
+import Star from './Star'
 
 const App = () => (
   <>
     <header>
-      <img style={{ gridArea: 'logo' }} src='myimage.jpg' loading='lazy' />
+      <Star />
       <h1 style={{ gridArea: 'title' }}>Polar EST +1</h1>
       <nav style={{ gridArea: 'nav' }}>
         <ul>
