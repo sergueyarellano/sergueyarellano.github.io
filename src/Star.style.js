@@ -41,6 +41,15 @@ const Wrapper = styled.div`
 .animation .st1 {
   animation: bling-2 5s linear infinite;
 }
+.animation .st2 {
+  animation: bling-3 5s linear infinite;
+}
+.animation .st3 {
+  animation: bling-4 5s linear infinite;
+}
+.animation .st4 {
+  animation: bling-5 5s linear infinite;
+}
 
 @keyframes starAnimation {
     100%
@@ -83,6 +92,57 @@ const Wrapper = styled.div`
   100%
   {
       opacity: (0.7 - (2 / 10));
+  }
+@keyframes bling-3 {
+  0%
+  {
+      opacity: (0.7 - (3 / 10));
+  }
+  5%
+  {
+      opacity: (0.7 - (3 / 10))+0.3;
+  }
+  10%
+  {
+      opacity: (0.7 - (3 / 10));
+  }
+  100%
+  {
+      opacity: (0.7 - (3 / 10));
+  }
+@keyframes bling-4 {
+  0%
+  {
+      opacity: (0.7 - (4 / 10));
+  }
+  5%
+  {
+      opacity: (0.7 - (4 / 10))+0.3;
+  }
+  10%
+  {
+      opacity: (0.7 - (4 / 10));
+  }
+  100%
+  {
+      opacity: (0.7 - (4 / 10));
+  }
+@keyframes bling-5 {
+  0%
+  {
+      opacity: (0.7 - (5 / 10));
+  }
+  5%
+  {
+      opacity: (0.7 - (5 / 10))+0.3;
+  }
+  10%
+  {
+      opacity: (0.7 - (5 / 10));
+  }
+  100%
+  {
+      opacity: (0.7 - (5 / 10));
   }
 }
 
