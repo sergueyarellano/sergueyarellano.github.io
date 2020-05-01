@@ -1,5 +1,6 @@
 const webpack = require('webpack')
 const Dotenv = require('dotenv-webpack')
+const path = require('path')
 
 module.exports = {
   mode: 'development',
@@ -7,11 +8,14 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new Dotenv({
-      path: './.env.development'
+      path: path.resolve(__dirname, '../.env.development')
     })
   ],
   devServer: {
-    contentBase: './dist',
+    contentBase: false,
     hot: true
+  },
+  output: {
+    path: path.resolve(__dirname, '../', 'temp')
   }
 }

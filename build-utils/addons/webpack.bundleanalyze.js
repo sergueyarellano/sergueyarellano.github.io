@@ -1,4 +1,4 @@
-const WebpackBundleAnalyzer = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const WebpackBundleAnalyzer = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 module.exports = {
   plugins: [
@@ -8,4 +8,4 @@ module.exports = {
       openAnalyzer: false
     })
   ]
-};
+}

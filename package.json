@@ -8,6 +8,7 @@
     "start": "webpack-dev-server --config build-utils/webpack.config.js --env.env=dev",
     "build": "webpack --config build-utils/webpack.config.js --env.env=prod",
     "build:analyze": "npm run build -- --env.addon=bundleanalyze --env.addon=bundlevisualizer",
+    "deploy": "git push origin `git subtree split --prefix dist develop`:master --force",
     "md2html": "node tools/md2html.js"
   },
   "dependencies": {
